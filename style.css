@@ -1,0 +1,84 @@
+:root {
+    --blue500: hsl(215, 51%, 70%);
+    --cyan400: hsl(178, 100%, 50%);
+
+    --blue950: hsl(217, 54%, 11%);
+    --blue900: hsl(216, 50%, 16%);
+    --blue800: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --font-body: 'Outfit';
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-bold: 600;
+    --font-size-paragraph: 18px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: var(--font-size-paragraph);
+    font-family: var(--font-body);
+    font-weight: var(--font-weight-regular);
+}
+body {
+    background-color: var(--blue950);
+    color: var(--white);
+}
+
+.kep {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.avat {
+    width: 1.75rem;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+.l {
+    max-width: 350px;
+    margin: 10% auto;
+    background-color: var(--blue900);
+    border-radius: 1rem;
+    padding: 1.25rem 1.25rem 1.75rem 1.25rem;
+    box-shadow: 0px 35px 0px 20px rgba(0, 0, 0, 0.1);
+}
+.cyan400 {
+    color: var(--cyan400);
+}
+.blue500 {
+    color: var(--blue500);
+}
+.blue800 {
+    color: var(--blue800);
+}
+.right {
+    margin-right: 0.5rem;
+}
+.right2 {
+    margin-right: 1rem;
+}
+.fw-bold {
+    margin-block-start: 1rem;
+    font-weight: var(--font-weight-bold);
+    font-size: 1.25rem;
+}
+.fw-light {
+    font-weight: var(--font-weight-light);
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    width: 305px;
+    height: 305px;
+    border-radius: 0.5rem;
+    background-color: rgba(0, 255, 247, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+.overlay:hover {
+    opacity: 1;
+    cursor: pointer;
+}
